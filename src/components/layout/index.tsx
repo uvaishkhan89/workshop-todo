@@ -54,6 +54,7 @@ export function ButtonAppBar() {
           _todos.push(x as any);
           setTodos({ ...todos, todos: _todos });
         }
+        setTodoText("");
       });
   };
 
@@ -70,6 +71,7 @@ export function ButtonAppBar() {
             todos: todos?.todos.filter((x) => x.id !== id),
           });
         }
+        alert("Todo successfully deleted");
       });
   };
 
